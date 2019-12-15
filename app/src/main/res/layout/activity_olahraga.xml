@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".olahraga">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/teknologi"
+            style="@style/CategoryStyle"
+            android:layout_weight="5"
+            android:background="@color/category_numbers"
+            android:text="Teknologi"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/kesehatan"
+            style="@style/CategoryStyle"
+            android:layout_weight="5"
+            android:background="@color/category_family"
+            android:text="Kesehatan"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/bisnis"
+            style="@style/CategoryStyle"
+            android:layout_weight="5"
+            android:background="@color/category_colors"
+            android:text="Bisnis"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/olahraga"
+            style="@style/CategoryStyle"
+            android:layout_weight="5"
+            android:background="@color/category_phrases"
+            android:text="Olahraga"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="submitLapor"
+        android:text="Lapor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/listNews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:divider="#F5F5F5"
+            android:dividerHeight="1dp"
+            android:visibility="visible"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</LinearLayout>

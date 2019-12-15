@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:src="@drawable/warning" />
+
+        <EditText
+            android:id="@+id/nama_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/email_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/judul_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul Berita"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/sumber_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sumber"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/laporan_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Laporan"
+            android:inputType="textCapWords" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="kirimLapor"
+            android:text="Kirim" />
+
+
+    </LinearLayout>
+
+</ScrollView>
